@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valkiria</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Accesibilidad -->
+  <h1 class="visually-hidden">Escena Valkiria - Decoración visual según la hora</h1>
+
+  <!-- Fondo principal -->
+  <div class="pared"></div>
+
+  <!-- Capa de superposición por hora -->
+  <div class="superposicion" id="superposicion"></div>
+
+  <!-- Elementos decorativos -->
+  <img src="imagenes/tablero.png" alt="Tablero" class="tablero" id="tablero">
+  <img src="imagenes/poster.png" alt="Poster decorativo" class="poster">
+  <img src="imagenes/ventana-dia.png" alt="Ventana según hora del día" class="ventana dia" id="ventana">
+  <img src="imagenes/mesa.png" alt="mesa" class="mesa">
+  <img src="imagenes/libros2.png" alt="Montón de libros" class="libros2">
+  <img src="imagenes/bambi.png" alt="Figura de Bambi" class="bambi">
+  <img src="imagenes/pegatina.png" alt="Sticker1" class="Sticker1">
+  <img src="imagenes/pegatinab.png" alt="Sticker2" class="Sticker2">
+  <img src="imagenes/marco.png" alt="Marco" class="marco">
+  <img src="imagenes/pc.png" alt="PC" class="pc">
+  <img src="imagenes/lapicera.png" alt="Lápiz" class="lapicera">
+  <img src="Imagenes/telefono.png" alt="telefono" class="telefono">
+
+  <!-- Botón modo noche -->
+  <button id="toggleNoche" class="modo-btn">🌙 Modo Noche</button>
+
+  <!-- Carpetas (ocultas por defecto) -->
+  <img src="imagenes/carpeta1.png" alt="Carpeta 1" class="carpeta carpeta1" id="carpeta1">
+  <img src="imagenes/carpeta2.png" alt="Carpeta 2" class="carpeta carpeta2" id="carpeta2">
+  <img src="imagenes/carpeta3.png" alt="Carpeta 3" class="carpeta carpeta3" id="carpeta3">
+  <img src="imagenes/carpeta4.png" alt="Carpeta 4" class="carpeta carpeta4" id="carpeta4">
+  <img src="imagenes/carpeta5.png" alt="Carpeta 5" class="carpeta carpeta5" id="carpeta5">
+  <img src="imagenes/carpeta6.png" alt="Carpeta 6" class="carpeta carpeta6" id="carpeta6">
+
+  <!-- Miniaturas del tablero -->
+<img src="imagenes/foto1.png" alt="Foto 1" class="foto-miniatura foto1" id="foto1">
+<img src="imagenes/foto2.png" alt="Foto 2" class="foto-miniatura foto2" id="foto2">
+<img src="imagenes/foto3.png" alt="Foto 3" class="foto-miniatura foto3" id="foto3">
+<img src="imagenes/foto4.png" alt="Foto 4" class="foto-miniatura foto4" id="foto4">
+<img src="imagenes/foto5.png" alt="Foto 5" class="foto-miniatura foto5" id="foto5">
+
+
+
+  <!-- Carrusel -->
+  <div class="carrusel" id="carrusel">
+    <button class="carrusel-btn prev" id="prev">&#10094;</button>
+    <img src="" alt="Recurso" id="carrusel-img">
+    <button class="carrusel-btn next" id="next">&#10095;</button>
+      <!-- Botón de cierre (X) -->
+    <button class="cerrar-carrusel" id="cerrarCarrusel">&times;</button>
+</div>
+  </div>
+
+  <!-- Overlay para efecto de zoom -->
+  <div class="zoom-panatalla" id="zoomOverlay"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+  <!-- Pantalla emergente con el número -->
+<div class="telefono-pantalla" id="telefonoPantalla">
+  <p>📞 Llamando a:</p>
+  <h2>3112778478</h2>
+</div>
+
+
+
+</body>
+</html>
