@@ -407,7 +407,7 @@ html, body {
   justify-content: center;
   z-index: 9999;
   opacity: 1;
-  transition: opacity 3s ease;
+  transition: opacity 1s ease;
   pointer-events: none;
   text-align: center;
 }
@@ -427,3 +427,51 @@ html, body {
   margin-top: 10px;
   letter-spacing: 1px;
 }
+
+.overlay-libro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 9998;
+  cursor: pointer;
+}
+
+.ventana-libro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.imagen-libro {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.cerrar-libro {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
+}
+
