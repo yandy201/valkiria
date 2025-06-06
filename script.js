@@ -16,6 +16,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const cerrarCarruselBtn = document.getElementById('cerrarCarrusel');
   const telefonoPantalla = document.getElementById('telefonoPantalla');
 
+  const diploma = document.querySelector('.diploma');
+  
+
+if (diploma && overlay) {
+  diploma.addEventListener('click', () => {
+    const estaAcercado = diploma.classList.contains('acercado');
+
+    diploma.classList.toggle('acercado');
+    overlay.style.display = estaAcercado ? 'none' : 'block';
+  });
+
+  overlay.addEventListener('click', () => {
+    diploma.classList.remove('acercado');
+    overlay.style.display = 'none';
+  });
+}
+
+// === Splash screen ===
+const splash = document.getElementById('splashScreen');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    splash.classList.add('fade-out');
+    setTimeout(() => {
+      splash.style.display = 'none';
+    }, 1500);
+  }, 1000);
+});
+
   // === Miniaturas del tablero ===
   const fotosMiniaturas = [
     document.getElementById('foto1'),
