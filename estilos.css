@@ -27,7 +27,7 @@ html, body {
 .pared {
   width: 100vw;
   height: 100vh;
-  background-image: url('imagenes/pared.png');
+  background-image: url('Imagenes/pared.png');
   background-size: cover;
   background-position: center;
   position: absolute;
