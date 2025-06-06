@@ -39,19 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (nightMode) {
       capa.classList.add('modo-noche');
-      ventana.src = 'imagenes/ventana-noche.png';
+      ventana.src = 'Imagenes/ventana-noche.png';
       btnToggle.textContent = '☀️ Modo Día';
       ventana.classList.replace('dia', 'noche');
     } else {
       if (hora >= 6 && hora < 12) {
         capa.classList.add('modo-manana');
-        ventana.src = 'imagenes/ventana-dia.png';
+        ventana.src = 'Imagenes/ventana-dia.png';
       } else if (hora >= 12 && hora < 18) {
         capa.classList.add('modo-tarde');
-        ventana.src = 'imagenes/ventana-tarde.png';
+        ventana.src = 'Imagenes/ventana-tarde.png';
       } else {
         capa.classList.add('modo-noche');
-        ventana.src = 'imagenes/ventana-noche.png';
+        ventana.src = 'Imagenes/ventana-noche.png';
       }
       btnToggle.textContent = '🌙 Modo Noche';
       ventana.classList.replace('noche', 'dia');
@@ -135,72 +135,72 @@ document.addEventListener('DOMContentLoaded', () => {
   // === Eventos para abrir carpetas en carrusel (PC) ===
   document.getElementById('carpeta1')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso1.png',
-      'imagenes/recurso2.png',
-      'imagenes/recurso3.png',
-      'imagenes/recurso5.png',
-      'imagenes/recurso6.png',
-      'imagenes/recurso7.png'
+      'Imagenes/recurso1.png',
+      'Imagenes/recurso2.png',
+      'Imagenes/recurso3.png',
+      'Imagenes/recurso5.png',
+      'Imagenes/recurso6.png',
+      'Imagenes/recurso7.png'
     ];
     abrirCarrusel(recursos);
   });
 
   document.getElementById('carpeta2')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso2.png',
-      'imagenes/recurso3.png',
-      'imagenes/recurso5.png',
-      'imagenes/recurso6.png',
-      'imagenes/recurso7.png',
-      'imagenes/recurso1.png'
+      'Imagenes/recurso2.png',
+      'Imagenes/recurso3.png',
+      'Imagenes/recurso5.png',
+      'Imagenes/recurso6.png',
+      'Imagenes/recurso7.png',
+      'Imagenes/recurso1.png'
     ];
     abrirCarrusel(recursos);
   });
 
   document.getElementById('carpeta3')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso3.png',
-      'imagenes/recurso5.png',
-      'imagenes/recurso6.png',
-      'imagenes/recurso7.png',
-      'imagenes/recurso1.png',
-      'imagenes/recurso2.png'
+      'Imagenes/recurso3.png',
+      'Imagenes/recurso5.png',
+      'Imagenes/recurso6.png',
+      'Imagenes/recurso7.png',
+      'Imagenes/recurso1.png',
+      'Imagenes/recurso2.png'
     ];
     abrirCarrusel(recursos);
   });
 
   document.getElementById('carpeta4')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso5.png',
-      'imagenes/recurso6.png',
-      'imagenes/recurso7.png',
-      'imagenes/recurso1.png',
-      'imagenes/recurso2.png',
-      'imagenes/recurso3.png'
+      'Imagenes/recurso5.png',
+      'Imagenes/recurso6.png',
+      'Imagenes/recurso7.png',
+      'Imagenes/recurso1.png',
+      'Imagenes/recurso2.png',
+      'Imagenes/recurso3.png'
     ];
     abrirCarrusel(recursos);
   });
 
   document.getElementById('carpeta5')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso6.png',
-      'imagenes/recurso7.png',
-      'imagenes/recurso1.png',
-      'imagenes/recurso2.png',
-      'imagenes/recurso3.png',
-      'imagenes/recurso4.png'
+      'Imagenes/recurso6.png',
+      'Imagenes/recurso7.png',
+      'Imagenes/recurso1.png',
+      'Imagenes/recurso2.png',
+      'Imagenes/recurso3.png',
+      'Imagenes/recurso4.png'
     ];
     abrirCarrusel(recursos);
   });
 
   document.getElementById('carpeta6')?.addEventListener('click', () => {
     const recursos = [
-      'imagenes/recurso7.png',
-      'imagenes/recurso1.png',
-      'imagenes/recurso2.png',
-      'imagenes/recurso3.png',
-      'imagenes/recurso5.png',
-      'imagenes/recurso6.png'
+      'Imagenes/recurso7.png',
+      'Imagenes/recurso1.png',
+      'Imagenes/recurso2.png',
+      'Imagenes/recurso3.png',
+      'Imagenes/recurso5.png',
+      'Imagenes/recurso6.png'
     ];
     abrirCarrusel(recursos);
   });
@@ -209,11 +209,11 @@ document.addEventListener('DOMContentLoaded', () => {
   fotosMiniaturas.forEach((foto, index) => {
     foto?.addEventListener('click', () => {
       const fotos = [
-        'imagenes/foto1.png',
-        'imagenes/foto2.png',
-        'imagenes/foto3.png',
-        'imagenes/foto4.png',
-        'imagenes/foto5.png'
+        'Imagenes/foto1.png',
+        'Imagenes/foto2.png',
+        'Imagenes/foto3.png',
+        'Imagenes/foto4.png',
+        'Imagenes/foto5.png'
       ];
       abrirCarruselDesde(index);
     });
@@ -222,11 +222,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // === Carrusel: Navegación ===
   function abrirCarruselDesde(indiceInicial = 0) {
     const fotos = [
-      'imagenes/foto1.png',
-      'imagenes/foto2.png',
-      'imagenes/foto3.png',
-      'imagenes/foto4.png',
-      'imagenes/foto5.png'
+      'Imagenes/foto1.png',
+      'Imagenes/foto2.png',
+      'Imagenes/foto3.png',
+      'Imagenes/foto4.png',
+      'Imagenes/foto5.png'
     ];
     indiceRecurso = indiceInicial;
     recursosActuales = [...fotos];
