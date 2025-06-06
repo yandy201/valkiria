@@ -18,6 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const diploma = document.querySelector('.diploma');
   
+  const libros2 = document.querySelector('.libros2');
+const overlayLibro = document.getElementById('overlayLibro');
+const ventanaLibro = document.getElementById('ventanaLibro');
+const btnCerrarLibro = document.getElementById('cerrarLibroBtn');
+
+
+
+if (libros2 && overlayLibro && ventanaLibro && btnCerrarLibro) {
+  libros2.addEventListener('click', () => {
+    overlayLibro.style.display = 'block';
+    ventanaLibro.style.display = 'flex';
+  });
+
+  [overlayLibro, btnCerrarLibro].forEach(el => {
+    el.addEventListener('click', () => {
+      overlayLibro.style.display = 'none';
+      ventanaLibro.style.display = 'none';
+    });
+  });
+
+  // Cerrar con ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      overlayLibro.style.display = 'none';
+      ventanaLibro.style.display = 'none';
+    }
+  });
+}
 
 if (diploma && overlay) {
   diploma.addEventListener('click', () => {
@@ -41,8 +69,8 @@ window.addEventListener('load', () => {
     splash.classList.add('fade-out');
     setTimeout(() => {
       splash.style.display = 'none';
-    }, 1500);
-  }, 1000);
+    }, 800);
+  }, 800);
 });
 
   // === Miniaturas del tablero ===
